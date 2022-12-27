@@ -9,6 +9,7 @@ class TodoSerializer(serializers.ModelSerializer):
             "id",
             "task",
             "description",
+            "priority",
             "is_done",
             "created_date"
         )
