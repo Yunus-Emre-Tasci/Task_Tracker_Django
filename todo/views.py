@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.generics import ListCreateAPIView,RetrieveUpdateDestroyAPIView
 
+
 # Create your views here.
 
 from .models import Todo
@@ -54,6 +55,10 @@ class Todos(ListCreateAPIView):
 class TodoDetail(RetrieveUpdateDestroyAPIView):
     queryset=Todo.objects.filter(is_done=False)
     serializer_class=TodoSerializer
+    
+    
+# class TodoMVS():
+    # pass    
             
         
         
